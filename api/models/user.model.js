@@ -20,6 +20,6 @@ const UserSchema=({
 
 },{timestamps : true});
 
-const User=Mongoose.model('user',userSchema);
+const User=Mongoose.model('User',userSchema);
 
 export default User;
