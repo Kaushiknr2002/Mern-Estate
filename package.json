@@ -4,7 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "predev": "npx kill-port 3000",  
+   
     "dev": "nodemon api/index.js",
     "start": "node api/index.js"
   },

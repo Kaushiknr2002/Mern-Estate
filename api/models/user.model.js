@@ -1,8 +1,7 @@
-import { Timestamp } from "bson";
-import mongoose, { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 
 
-const UserSchema=({
+const userSchema= new mongoose.Schema({
     username : {
         type : String,
         required : true,
@@ -17,9 +16,10 @@ const UserSchema=({
         type : String,
         required : true
     }
+    
 
 },{timestamps : true});
 
-const User=Mongoose.model('User',userSchema);
+const User=mongoose.model('User',userSchema);
 
 export default User;
